@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <center>
+       <form action="./home.html" method="get"> 
+            <h1>Login</h1>
+            <Label for="email">Email   :</Label>
+            <input type="email" id="email" name="email" placeholder="Enter your email" 
+                pattern="[a-zA-Z0-9._%+-]+@(gmail|yahoo|outlook)\.(com|in|org)" required="">
+            <br><br><label for="password">Password  :</label>
+            <input type="password" id="password" 
+                pattern="(?=.*[A-Z])(?=.*[a-z])(?=.*[0-9])(?=.*[!@#$%^&amp;*]).{8,16}" name="password" placeholder="Enter your password" required="">
+            <br><br>
+            <a href="forgot.html">Forgot Password?</a><br><br>
+            <input type="submit" value="login">
+            <br>
+            <h4>Don't have an account ? <a href="./signup.html">signup</a> </h4>    
+       </form>
+    </center>
+</body>
+</html>
